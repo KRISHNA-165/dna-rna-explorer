@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA & RNA Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DNA & RNA Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dna">About DNA</a></li>
+                <li><a href="#rna">About RNA</a></li>
+                <li><a href="#viewer">3D Viewer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome!</h2>
+            <p>Explore the fascinating world of DNA and RNA with interactive models and detailed insights.</p>
+        </section>
+        <section id="dna">
+            <h2>About DNA</h2>
+            <p>DNA is a molecule that contains the instructions an organism needs to develop, live, and reproduce.</p>
+            <img src="dna_structure.jpg" alt="DNA Structure">
+        </section>
+        <section id="rna">
+            <h2>About RNA</h2>
+            <p>RNA acts as a messenger carrying instructions from DNA for controlling protein synthesis.</p>
+            <img src="rna_structure.jpg" alt="RNA Structure">
+        </section>
+        <section id="viewer">
+            <h2>3D Viewer</h2>
+            <p>Interact with DNA and RNA structures:</p>
+            <div id="jsmolContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 DNA & RNA Explorer. All rights reserved.</p>
+    </footer>
+    <script src="jsmol.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<section id="viewer">
+    <h2>3D Viewer</h2>
+    <p>Select a structure to explore:</p>
+    <select id="structureSelector">
+        <option value="1BNA">DNA (1BNA)</option>
+        <option value="4V4Q">RNA (4V4Q)</option>
+        <option value="2LQT">tRNA (2LQT)</option>
+    </select>
+    <div id="jsmolContainer"></div>
+</section>
